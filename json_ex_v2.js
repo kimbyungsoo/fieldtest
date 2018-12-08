@@ -15,7 +15,7 @@ if(process.argv[4] == null){
 let socketDataReceiveCallback = function (data) {
     //data = data.toString('hex')
     dut.write(data);
-    //data = data.toString('hex')
+    data = data.toString('hex')
     console.log("SERVER : DATA RECEIVED  : ", data);
     if (packets[data] == null) {
         packets[data] = 1;
